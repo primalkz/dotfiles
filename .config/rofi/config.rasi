@@ -1,0 +1,17 @@
+configuration{
+    modi: "drun";
+    width: 30;
+    columns: 2;
+    lines: 8;
+ 	font: "Iosevka 12";
+    show-icons: true;
+	icon-theme: "Qogir-Dark";
+    terminal: "st";
+    drun-display-format: "{icon} {name}";
+    display-drun: "Run";
+    location: 0;
+    separator-style: "solid";
+    disable-history: true;
+    hide-scrollbar: true;
+}
+@import "/usr/share/rofi/themes/simple.rasi"
