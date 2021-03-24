@@ -1,10 +1,19 @@
 #
 # wm independent hotkeys
-#
+super + shift + l
+	betterlockscreen --lock blur
+
+
+# screenshot
+super + shift + s
+	scrot ~/Pictures/rice/%b%d-%H:%M.png
+# screenshot with delay 3 sec
+super + shift + p
+	scrot ~/Pictures/rice/%b%d-%H:%M.png -d 3
 
 # terminal emulator
 super + Return
-	alacritty
+	st
 
 # program launcher
 super + @space
@@ -13,6 +22,10 @@ super + @space
 # program launcher
 super + c
 	rofi -show drun
+
+# file browser
+super + shift + f
+	rofi -show file-browser
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -128,7 +141,7 @@ super + {Left,Down,Up,Right}
 # Functional key bindings
 # I use mpd, so mpc can be used to switch music tracks
 XF86Audio{Stop,Prev,Next,Play}
-        mocp {stop,prev,next,toggle}
+        mpc {stop,prev,next,toggle}
 
 # xbacklight has to be installed
 XF86MonBrightness{Up,Down}

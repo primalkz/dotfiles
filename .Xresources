@@ -1,0 +1,45 @@
+! Numix
+
+*background: #2d2d2d
+*foreground: #dedede
+! black
+ *color0:    #2d2d2d
+ *color8:    #dedede
+! red
+ *color1:    #d64937
+ *color9:    #d64937
+! green
+ *color2:    #d64937
+ *color10:   #00ff00
+! yellow
+ *color3:    #dedede
+ *color11:   #dedede
+! blue
+ *color4:    #d64937
+ *color12:   #d64937
+! magenta
+ *color5:    #ff0000
+ *color13:   #dedede
+! cyan
+ *color6:    #dedede
+ *color14:   #dedede
+! white
+ *color7:    #dedede
+ *color15:   #dedede
+
+!-- Xft settings -- !
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintfull
+
+! -- Fonts -- !
+!*.font:xft:mononoki:pixelsize=15
+URxvt.font: xft:mononoki:size=12,xft:Inconsolata Nerd Font Mono:size=11, xft:FontAwesome:pixelsize=13, xft:Unifont:size=10 
+URxvt.boldfont:xft:Unifont:size=10,xft:Iosevka:pixelsize=15,xft:MaterialIcons:size=10
+! window padding
+
+URxvt.letterSpace: 0
+URxvt.internalBorder:  10
+URxvt.scrollBar: false
