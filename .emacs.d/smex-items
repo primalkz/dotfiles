@@ -1,0 +1,22 @@
+
+;; ----- smex-history -----
+(
+ ansi-term
+ customize
+ customize-themes
+ pdf-occur-dired-minor-mode
+ list-packages
+ tetris
+ cd
+)
+
+;; ----- smex-data -----
+(
+ (customize . 10)
+ (customize-themes . 5)
+ (tetris . 1)
+ (ansi-term . 7)
+ (list-packages . 1)
+ (pdf-view-mode . 2)
+ (pdf-occur-dired-minor-mode . 1)
+)

@@ -1,0 +1,78 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/tuxm/Documents/cpp-practice/" . "1/")
+ ("/" . "tmp/")
+ ("/home/tuxm/Documents/c-practice/" . "7/")
+ ("/home/tuxm/Documents/" . "cpp-practice/")
+ ("/home/tuxm/.config/" . "polybar/")
+ ("/home/tuxm/" . "Documents/")
+ ("/home/" . "tuxm/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/tuxm/.emacs.d/"
+ "/home/tuxm/Documents/cpp-practice/1/"
+ "/home/tuxm/Documents/c-practice/7/"
+ "/home/tuxm/Documents/c-practice/5/"
+ "/home/tuxm/Downloads/"
+ "/home/tuxm/Documents/c-practice/3/"
+ "/home/tuxm/Documents/c-practice/2/"
+ "/home/tuxm/.config/polybar/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "config.org"
+ "functions.c"
+ "hello.cpp"
+ "04_create5.c"
+ "init.el"
+ "06_recurssion_factorial.c"
+ "The Rust Programming Language.pdf"
+ "07_quiz1.c"
+ "01_instruction.c"
+ "config.ini"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/tuxm/.emacs.d/" (24754 27758 226648 830000) "config.org~" "ido.last~" "elpa/" "init.el" "init.el~" "config.el" "recentf" "config.org" "ido.last" "auto-save-list/" "../" "./" "smex-items")
+
+ ("/tmp/" (24754 27690 406649 251000) ".org.chromium.Chromium.w2qyRF/" ".org.chromium.Chromium.HWijeS/" ".org.chromium.Chromium.FdhqCY/" ".org.chromium.Chromium.DzdnWC/" ".org.chromium.Chromium.uAEVEv/" ".X0-lock" ".org.chromium.Chromium.9XlKIl/" "serverauth.wizeWfhi39" ".org.chromium.Chromium.x4ixie/" "dbus-XoGFSXLiDj" "tmp.fjoxa8b19G.tar.gz" ".org.chromium.Chromium.PJR3Wj/" ".org.chromium.Chromium.oZwu3r/" "tmp.fjoxa8b19G" "bspwm_1_0-socket" "dbus-tTL1b0FsOJ" "dbus-r687Q9l8BP" ".org.chromium.Chromium.A4dLtK/" ".org.chromium.Chromium.PtpQRv/" ".org.chromium.Chromium.Bno5F9/" ".org.chromium.Chromium.PwhxXV/" ".org.chromium.Chromium.I9eyVg/" ".org.chromium.Chromium.JTUA4s/" ".org.chromium.Chromium.62ZmN8/" ".org.chromium.Chromium.ZcaN9d/" "plasma-csd-generator.BkSaSj/" "tmp.ieib0KRyp7" ".org.chromium.Chromium.Qaug6I/" ".org.chromium.Chromium.f8kavH/" "dbus-hRyC8emY3n" ".org.chromium.Chromium.M8KxvF/" ".org.chromium.Chromium.MTkgbA/" ".org.chromium.Chromium.BkOeKb/" ".org.chromium.Chromium.PEoB1H/" ".org.chromium.Chromium.mfOZrC/" "dbus-zekcDqWJzN" ".org.chromium.Chromium.mGldVB/" ".org.chromium.Chromium.hDYa1c/" ".org.chromium.Chromium.PVEcQS/" ".org.chromium.Chromium.QtyaG0/" ".org.chromium.Chromium.KyMqN7/" "dbus-WF9CKb108G" "dbus-XLHdFQ0dbw" ".org.chromium.Chromium.sPyN5Y/" ".org.chromium.Chromium.S0hzqV/" ".org.chromium.Chromium.DFvgqv/" ".org.chromium.Chromium.GT4w57/" ".org.chromium.Chromium.NKFiYB/" ".org.chromium.Chromium.ZOat6T/" ".org.chromium.Chromium.BlbJIi/" ".org.chromium.Chromium.a0x69j/" "serverauth.StRX9t3sTI" ".org.chromium.Chromium.1QB14D/" ".org.chromium.Chromium.39zM7x/" ".org.chromium.Chromium.vIrjOi/" ".org.chromium.Chromium.TIgICj/" ".org.chromium.Chromium.7P4k8Q/" ".org.chromium.Chromium.baHhtf/" ".org.chromium.Chromium.vYZ5rA/" ".org.chromium.Chromium.Une9Fy/" "dbus-0LD36gW0Mv" "serverauth.Cn0IjfZF9G" ".org.chromium.Chromium.fdRfHU/" ".org.chromium.Chromium.Cei1Ug/" ".org.chromium.Chromium.Gf0Lzd/" "dbus-TCOeWavrCz" ".org.chromium.Chromium.L8S1DI/" "dbus-OzRjyBLyRF" ".org.chromium.Chromium.i4K3VB/" ".org.chromium.Chromium.gzHdAX/" ".org.chromium.Chromium.jafudq/" ".org.chromium.Chromium.ymVWew/" ".Test-unix/" ".org.chromium.Chromium.gmS6zQ/" ".org.chromium.Chromium.8cieO6/" "mpd.fifo" "dbus-JBG5quYYsm" ".org.chromium.Chromium.sf1uSS/" "tmpaddon" ".org.chromium.Chromium.KwBUDi/" ".org.chromium.Chromium.WII1ii/" "dbus-6NHDfTYWDN" ".org.chromium.Chromium.symyuw/" ".org.chromium.Chromium.4HZpxT/" ".org.chromium.Chromium.kjMt2U/" "serverauth.yxYiaY5aRu" ".org.chromium.Chromium.MaQdNl/" ".org.chromium.Chromium.9DJfDa/" "dbus-kzNYiT9VEu" "tmp.4yMyXJetpO" ".org.chromium.Chromium.mhcBaj/" ".org.chromium.Chromium.LKmLF5/" ".X11-unix/" "qtsingleapp-qBitto-2fa5-3e8" ".org.chromium.Chromium.bZ9juu/" ".org.chromium.Chromium.CYVQYt/" ".org.chromium.Chromium.Wi3J5V/" ".org.chromium.Chromium.mXLqJW/" ".org.chromium.Chromium.LmzeWH/" ".org.chromium.Chromium.SSb3XN/" ".org.chromium.Chromium.uoYJ99/" ".org.chromium.Chromium.u6Vn8I/" "tracker-extract-3-files.1000/" "serverauth.DIBCvrWVig" ".ICE-unix/" ".org.chromium.Chromium.Afv9Wp/" ".org.chromium.Chromium.egkoBq/" ".org.chromium.Chromium.gXgRdF/" ".org.chromium.Chromium.UMgiNg/" ".org.chromium.Chromium.viu4Mt/" ".org.chromium.Chromium.yHxjBK/" ".org.chromium.Chromium.W92OHn/" "serverauth.SHovB9cLTd" ".org.chromium.Chromium.LBIdti/" ".org.chromium.Chromium.xXAAB6/" ".org.chromium.Chromium.n23I6D/" ".org.chromium.Chromium.H2W9st/" ".org.chromium.Chromium.Wryb9s/" ".org.chromium.Chromium.1QFKjD/" "dbus-qRZJPXDy1T" "qtsingleapp-qBitto-2fa5-3e8-lockfile" ".org.chromium.Chromium.XPaO8p/" ".org.chromium.Chromium.3LMAOp/" ".org.chromium.Chromium.98u075/" ".org.chromium.Chromium.VPKzqz/" ".org.chromium.Chromium.pCKdNl/" ".org.chromium.Chromium.awovKI/" ".org.chromium.Chromium.lf47H2/" ".org.chromium.Chromium.1bk1wF/" "serverauth.sbrfgDwDV6" "vwMUEwJ/" ".org.chromium.Chromium.mUA2xj/" ".org.chromium.Chromium.6KFeJS/" ".org.chromium.Chromium.n6I1l7/" "serverauth.UqC9AVGH3i" ".org.chromium.Chromium.vSia0y/" ".org.chromium.Chromium.7Dqj44/" "dbus-F5B5FgPqTE" ".org.chromium.Chromium.kGxCDI/" ".org.chromium.Chromium.S1SMYc/" ".org.chromium.Chromium.tjIn4q/" "serverauth.NSoZoWGWAH" ".org.chromium.Chromium.plfH2Z/" ".org.chromium.Chromium.QeQkpE/" "plasma-csd-generator.eEWBis/" ".org.chromium.Chromium.Oedfzk/" ".org.chromium.Chromium.3OfZVs/" ".org.chromium.Chromium.HVJCwk/" ".org.chromium.Chromium.0x98no/" "dbus-nZzJCniMBA" ".org.chromium.Chromium.BRLdil/" ".org.chromium.Chromium.Z4CP9c/" ".org.chromium.Chromium.Rqumqv/" ".org.chromium.Chromium.ylN5mz/" ".org.chromium.Chromium.0lIFGx/" ".org.chromium.Chromium.hufhG5/" ".org.chromium.Chromium.VbG41s/" "xauth-1000-_0" "dbus-phGElCgo0O" ".org.chromium.Chromium.9d2YRW/" ".org.chromium.Chromium.241BML/" "dbus-26GFzEv2qd" "dbus-kCZBQurmKM" ".org.chromium.Chromium.lrm46e/" ".org.chromium.Chromium.Gy99n6/" ".org.chromium.Chromium.NVOXwN/" ".org.chromium.Chromium.g9UrL8/" ".org.chromium.Chromium.3jGFQd/" ".org.chromium.Chromium.qdbZZ8/" ".org.chromium.Chromium.eCOrHW/" ".org.chromium.Chromium.pYVuCP/" "plasma-csd-generator.NlVKkP/" ".org.chromium.Chromium.Lizh8g/" ".org.chromium.Chromium.0l2wke/" "plasma-csd-generator.RVAghL/" "dbus-mLTFUgJ6nX" ".org.chromium.Chromium.vo3WAS/" ".org.chromium.Chromium.d8GtIu/" ".org.chromium.Chromium.GHYMBM/" ".org.chromium.Chromium.qxpmjZ/" ".org.chromium.Chromium.uJtrR5/" ".org.chromium.Chromium.me8bvM/" "dbus-OvABMEkdpM" ".org.chromium.Chromium.Nnrd6E/" "plasma-csd-generator.Txzofm/" "mozilla_tuxm0/" ".org.chromium.Chromium.bPe9Yb/" ".org.chromium.Chromium.c1oSQp/" "dbus-WYPMm40OS7" "dbus-9RclF1v98K" "dbus-c402tzbfc9" "serverauth.CrXdA07tdY" "startkdeinitlock" ".org.chromium.Chromium.xDnjUj/" ".org.chromium.Chromium.O95dxb/" ".org.chromium.Chromium.uxJZQs/" "dbus-CZao0D7kGd" ".org.chromium.Chromium.ZEAKPi/" ".org.chromium.Chromium.FcyfAS/" "dbus-xA7lsOzhJU" ".org.chromium.Chromium.Gj2IhJ/" ".org.chromium.Chromium.7OjF44/" ".org.chromium.Chromium.2yp7Fy/" ".org.chromium.Chromium.KXIthd/" ".org.chromium.Chromium.eXjztj/" ".org.chromium.Chromium.HcJ3Av/" ".org.chromium.Chromium.n6Gbdw/" ".org.chromium.Chromium.fgAxia/" ".org.chromium.Chromium.N2dEH0/" ".org.chromium.Chromium.NwaG58/" ".org.chromium.Chromium.75vrw9/" "babel-PnMDb3/" ".org.chromium.Chromium.ecftzH/" "rustckS8SBg/" ".org.chromium.Chromium.5qA3r2/" ".org.chromium.Chromium.VNjjkH/" "dbus-rdlxeH7ant" "dbus-pSrqHXSIdU" ".org.chromium.Chromium.YZfArf/" "bspwm_0_0-socket" ".org.chromium.Chromium.2CxWZm/" "dbus-IJDceXtdxu" ".org.chromium.Chromium.ppj0Mn/" "dbus-p81PPehXzp" "dbus-1UicBKwfni" ".org.chromium.Chromium.HT8RJ1/" "vscode-typescript1000/" "dbus-XGPEq3e9s0" "dbus-od6eYNyQ3M" ".org.chromium.Chromium.xrc1nz/" ".org.chromium.Chromium.Zfx8mh/" ".org.chromium.Chromium.zlUWgf/" ".org.chromium.Chromium.O5jPBD/" ".org.chromium.Chromium.QY3C5R/" "tmp-vw4.xpi" ".font-unix/" ".org.chromium.Chromium.2dyQu7/" ".org.chromium.Chromium.ufgqjC/" ".org.chromium.Chromium.NKmHrp/" "plasma-csd-generator.pwNhWT/" ".org.chromium.Chromium.lOJnId/" "chromium-upload-dfde937d695a2ec3" ".org.chromium.Chromium.6KAGWH/" "mpd_cover.jpg" ".vbox-tuxm-ipc/" "dbus-X7GkD923tW" "dbus-sBe5jD9BLH" "dbus-7JAMW2u7dv" ".org.chromium.Chromium.W0xr71/" ".org.chromium.Chromium.UQ8HKH/" ".org.chromium.Chromium.jdOnAZ/" ".XIM-unix/" "../" "./")
+
+ ("/home/tuxm/.config/polybar/" (24754 13871 803227 827000) "config2" "configmangu" "config3.ini" "config" "configsid" "config1.ini" "config1" "scripts/" "../" "polywins.sh" "./" "config.ini" "launch.sh" "config4")
+
+ ("/home/tuxm/Downloads/" (24754 9257 819971 499000) "debian-live-10.9.0-amd64-standard+nonfree.iso" "LFS-BOOK-10.1.pdf" "slacko64-7.0.iso" "plata-theme-colors-0.9.1.tar.xz" "Tryit Editor v3.6_files/" "style.css" "ChemistryEXP-1.pdf" "Worksheet-Parts of speech.pdf" "Ultimate-Dark-Grey/" "plata-theme-colors-0.9.1/" "volantes_light_cursors/" "mockup1.png" "main.js" "damnsmall-0.6.1.iso" "Telegram Desktop/" "elementaryos-6.0-daily.20210430.iso" "nitrux-release-minimal-amd64_2021.05.01.iso" "LFS-BOOK-10.1.tar.xz" "mockup2.png" "index.html" "wallhaven-6olw9x_2560x1440.png" "volantes_light_cursors.tar.gz" "showcase.jpg" "logo.png" "cards.png" "manjaro-xfce-21.0.3-minimal-210428-linux510.iso" "TinyCore-12.0.iso" "DS_Store" "section-bg.jpg" "Tela/" "lol.png" "Tela-dark/" "README.md" "lfs-bootscripts-20210201.tar.xz" "nixos-20.09.4169.ac60476ed94-x86_64-linux.ova" "devuan_beowulf.torrent" "bash Cookbook_ Solutions and Examples for bash Users ( PDFDrive ).pdf" "devuan_beowulf/" "manjaro-cutefish-21.05-development-unstable-minimal-210527-linux510.iso.zip" "JetBrains Mono Medium Medium Nerd Font Complete Mono Windows Compatible.ttf" "debian-live-10.9.0-amd64-standard+nonfree (1).iso" "void-live-x86_64-20210218-lxde.iso" ".5c9e977151b948bbd64e28c38befd6c10c5e14f1.parts" "Xresources" "Tryit Editor v3.6.html" "VictorMono.zip" "rfetch/" "JetBrainsMono.zip" "JetBrains Mono Medium Medium Nerd Font Complete Windows Compatible.ttf" "wget-list.txt" "The Rust Programming Language.pdf" "Luna Icons/" "manjaro-kde-21.0.5-minimal-210519-linux510.iso" "140528-trinity_adaptation/" "C notes Code with harry-20210507T153952Z-001.zip" "Worksheet Question Tags.pdf" "C Programming A Modern Approach by K. N. King (z-lib.org).pdf" "void-live-x86_64-musl-20210218-lxde.iso" "fFFF/" "01-Tela.tar.xz" "Ultimate-Dark-Blue/" "dsl-4.11.rc1.iso" "CyberOS-2021.05.08-x86_64.iso" "Manjaro/" "Project.zip" "../" "./")
+
+ ("/home/tuxm/Documents/c-practice/7/" (24743 43364 526620 962000) "array" "table5" "reverseArray" "02_array_function.c" "06_reverseArra.c" "03_pract1.c" "../" "05_creat5Table.c" "01_pointers_o_i.c" "./" "04_createanyTABle.c" "ptrin" "pract1")
+
+ ("/home/tuxm/Documents/cpp-practice/1/" (24754 11308 743270 465000) "hello" "hello.cpp" "03_input.cpp" "variables.cpp" "../" "./")
+
+ ("/home/tuxm/" (24754 25116 156664 763000) "Public/" "yay/" "2021-05-17 09-48-38.mkv" ".xinitrc" ".bash_history" ".mpd/" "Desktop/" ".ICEauthority" ".lyrics/" ".mozilla/" "suckless/" ".icewm/" ".viminfo" "Pictures/" ".Xauthority" "SS/" ".pki/" ".ncmpcpp/" ".vimrc" ".issue" ".bashrc" ".dbus/" ".fehbg" "2021-05-28-13-18-54.004-VBoxSVC-13711.log" ".gtkrc-2.0" ".bash_profile" "slstatus/" ".vscode-oss/" "uni/" ".profile" ".emacs.d/" "Videos/" "dots/" ".ssh/" ".gnupg/" "2021-05-17 09-38-59.mkv" "Templates/" ".fonts.conf" "Music/" "pr/" ".face" ".lesshst" "../" ".themes/" ".xmonad/" ".xsession-errors.old" ".python_history" ".face.icon" "webdev/" "dwm-colors/" "2021-05-17 09-36-56.mkv" ".config/" "fvwm95/" ".cargo/" "VirtualBox VMs/" "Downloads/" ".pass" "dwm-back/" ".xsession-errors" "./" "no_sucks/" "Xrr/" ".dmrc" ".kde4/" "test.txt" "2021-05-17 09-50-50.mkv" "dmenu/" "dump/" ".wget-hsts" ".Xresources" "Documents/" ".ssr/" ".vim/" ".w3m/" ".local/" ".gtkrc-2.0-kde4" "test.org~" ".icons/" ".cache/" ".bash_logout" "Fas.txt")
+
+ ("/home/tuxm/Documents/cpp-practice/" (24751 36861 706684 610000) "6/" "11/" "2/" "10/" "7/" "8/" "12/" "1/" "4/" "../" "9/" "./" "5/" "3/")
+
+ ("/home/tuxm/Documents/" (24751 36769 323349 508000) "c-practice/" "C notes Code with harry/" "vfetch/" "TRASH isn't it/" "cpp-practice/" "../" "./" "projects/" "C notes Code with harry-20210507T153952Z-001.zip")
+
+ ("/home/tuxm/Documents/c-practice/2/" (24727 33843 916647 210000) "oper" "f" "a_inst" "../" "03_operator_precedence.c" "04_practice_set.c" "02_arithmatic.c" "./" "inst" "01_type_instruction.c")
+
+ ("/home/tuxm/Documents/c-practice/5/" (24737 9257 276642 830000) "11_forLoop.c" "03_area.c" "fob" "04_factorial.c" "06_recurssion_factorial.c" "sumofn" "02_change.c" "change" "09_recur_sumofn.c" "factorial1" "../" "area" "recurr" "sum" "oops" "10_starprint.c" "08_fibonacci.c" "./" "ques2" "01_funct.c" "07_ques2.c" "gaols")
+
+ ("/home/tuxm/.emacs.d/elpa/" (24732 48650 543282 615000) "beacon-20190104.1931/" "doom-themes-20210503.1730/" "use-package-20210207.1926/" "doom-modeline-20210501.1628/" "s-20180406.808/" "which-key-20210407.28/" "shrink-path-20190208.1335/" "smex-20151212.2209/" "tablist-20200427.2205/" "f-20191110.1357/" "pdf-tools-20210511.1739/" "ido-vertical-mode-20210205.436/" "atom-one-dark-theme-20210128.1640/" "gnupg/" "archives/" "bind-key-20210210.1609/" "../" "org-bullets-20200317.1740/" "all-the-icons-20210425.1035/" "./" "dash-20210330.1544/")
+
+ ("/home/tuxm/.emacs.d/elpa/pdf-tools-20210511.1739/" (24732 48654 199949 221000) "pdf-outline.el" "pdf-loader.el" "build/" "pdf-macs.elc" "pdf-misc.el" "pdf-misc.elc" "pdf-tools-pkg.el" "pdf-cache.elc" "pdf-sync.elc" "pdf-history.elc" "pdf-virtual.el" "pdf-links.elc" "pdf-outline.elc" "pdf-annot.el" "pdf-tools.el" "pdf-annot.elc" "pdf-virtual.elc" "pdf-util.el" "pdf-tools.elc" "pdf-view.elc" "pdf-dev.elc" "pdf-sync.el" "../" "pdf-util.elc" "pdf-history.el" "pdf-occur.elc" "pdf-links.el" "pdf-occur.el" "README" "pdf-tools-autoloads.el" "pdf-info.elc" "./" "pdf-dev.el" "pdf-isearch.el" "pdf-cache.el" "pdf-loader.elc" "pdf-isearch.elc" "pdf-info.el" "pdf-view.el" "pdf-macs.el")
+
+ ("/home/tuxm/Documents/c-practice/3/" (24728 37041 683306 539000) "quiz1" "02_if_else.c" "dr" "06_quiz_question.c" "08_tax.c" "ifel" "04_if_else_if.c" "07_quiz1.c" "drive" "05_switch_case.c" "switch" "../" "01_conditional.c" "03_logical.c" "./" "tx" "elseif")
+
+ ("/home/tuxm/Documents/c-practice/" (24725 28006 786632 776000) "6/" "11/" "2/" "10/" "7/" "8/" "1/" "4/" "../" "9/" "./" "5/" "3/")
+
+ ("/home/tuxm/.config/" (24724 946 646594 126000) "Thunar/" "dunst/" "midori/" "lxpanel/" "pcmanfm/" "compton.conf" "user-dirs.dirs" "kdeglobals" "sxhkd/" "ranger/" "gtk-3.0/" "xfce4/" "openbox/" "plasmashellrc" "qBittorrent/" "pcmanfm-qt/" "qterminal.org/" "lxlauncher/" "pulse/" "bspwm/" "lxsession/" "ncmpcpp/" "user-dirs.locale" "gtk-4.0/" "atril/" "autostart/" "pavucontrol.ini" "lximage-qt/" "VSCodium/" "libfm/" "lxterminal/" "konversationrc" "plasma-org.kde.plasma.desktop-appletsrc" "qt5ct/" "../" "nautilus/" "picom.conf" "mpv/" "cmst/" "kwriterc" "gwenviewrc" "hexchat/" "pipewire/" "kwinrc" "chromium/" "gpicview/" "qpdfview/" "kateschemarc" "katerc" "xmobar/" "./" "cava/" "polybar/" "caja/" "plasma-workspace/" "htop/" "mpd/" "kitty/" "zathura/" "fontconfig/" "QtProject.conf" "nemo/" "VirtualBox/" "chromium-flags.conf" "gtk-2.0/" "rofi/" "mimeapps.list" "leafpad/" "dconf/" "neofetch/" "falkon/" "mate/")
+
+ ("/home/" (24700 27278 276657 385000) "tuxm/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

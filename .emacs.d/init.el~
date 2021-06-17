@@ -1,0 +1,105 @@
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives
+     '("melpa" . "https://melpa.org/packages/"))
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(unless (package-installed-p 'atom-one-dark-theme)
+  (package-refresh-contents)
+  (package-install 'atom-one-dark-theme))
+
+(org-babel-load-file (expand-file-name "~/.emacs.d/config.org"))
+
+(setq make-backup-file nil)
+(setq auto-save-default nil)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+;;(defvar my-term-shell "/bin/bash")
+;;(defadvice ansi-term (before force-bash)
+;;  (interactive (list my-term-shell)))
+;;(ad-activate 'ansi-term)
+
+;;(global-set-key (kbd "<s-return>") 'ansi-term)
+
+(setq scroll-conservatively 100)
+
+(when window-system (global-hl-line-mode t))
+
+(when window-system (global-prettify-symbols-mode t))
+
+(use-package which-key
+  :ensure t
+  :init
+  (which-key-mode))
+
+(use-package beacon
+  :ensure t
+  :init
+  (beacon-mode 1))
+
+(package-initialize)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
+(setq inhibit-startup-message t)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
+ '(custom-enabled-themes '(doom-one))
+ '(custom-safe-themes
+   '("f4876796ef5ee9c82b125a096a590c9891cec31320569fc6ff602ff99ed73dca" "76bfa9318742342233d8b0b42e824130b3a50dcc732866ff8e47366aed69de11" "3c2f28c6ba2ad7373ea4c43f28fcf2eed14818ec9f0659b1c97d4e89c99e091e" "8f5a7a9a3c510ef9cbb88e600c0b4c53cdcdb502cfe3eb50040b7e13c6f4e78e" "fce3524887a0994f8b9b047aef9cc4cc017c5a93a5fb1f84d300391fba313743" "171d1ae90e46978eb9c342be6658d937a83aaa45997b1d7af7657546cae5985b" default))
+ '(fci-rule-color "#5B6268")
+ '(jdee-db-active-breakpoint-face-colors (cons "#1B2229" "#51afef"))
+ '(jdee-db-requested-breakpoint-face-colors (cons "#1B2229" "#98be65"))
+ '(jdee-db-spec-breakpoint-face-colors (cons "#1B2229" "#3f444a"))
+ '(objed-cursor-color "#ff6c6b")
+ '(package-selected-packages
+   '(pdf-tools doom-modeline smex ido-vertical-mode beacon doom-themes atom-one-dark-theme which-key use-package))
+ '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
+ '(rustic-ansi-faces
+   ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
+ '(tetris-x-colors
+   [[229 192 123]
+    [97 175 239]
+    [209 154 102]
+    [224 108 117]
+    [152 195 121]
+    [198 120 221]
+    [86 182 194]])
+ '(vc-annotate-background "#282c34")
+ '(vc-annotate-color-map
+   (list
+    (cons 20 "#98be65")
+    (cons 40 "#b4be6c")
+    (cons 60 "#d0be73")
+    (cons 80 "#ECBE7B")
+    (cons 100 "#e6ab6a")
+    (cons 120 "#e09859")
+    (cons 140 "#da8548")
+    (cons 160 "#d38079")
+    (cons 180 "#cc7cab")
+    (cons 200 "#c678dd")
+    (cons 220 "#d974b7")
+    (cons 240 "#ec7091")
+    (cons 260 "#ff6c6b")
+    (cons 280 "#cf6162")
+    (cons 300 "#9f585a")
+    (cons 320 "#6f4e52")
+    (cons 340 "#5B6268")
+    (cons 360 "#5B6268")))
+ '(vc-annotate-very-old-color nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :extend nil :stipple nil :background nil :foreground nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 105 :width normal :foundry "default" :family "VictorMono Nerd Font Mono")))))
