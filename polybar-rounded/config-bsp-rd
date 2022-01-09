@@ -1,0 +1,466 @@
+[colors]
+;rounds =            #2b2f37
+; Iceberg : rounds =            #1e2127
+rounds = #1e222a
+background =        ${xrdb:background}
+background-alt =    #444
+foreground =        ${xrdb:foreground}
+foreground-alt =    #555
+primary =           #ffb52a
+secondary =         #e60053
+alert =             #bd2c40
+green =             ${xrdb:color2}
+blue =              ${xrdb:color4}
+red =               ${xrdb:color1}
+yellow =            ${xrdb:color3}
+
+[bar/bar]
+width = 100%
+height = 24
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+;line-size = 1
+
+border-size = 3
+border-color = ${colors.background}
+
+
+font-0 = JetBrainsMono Nerd Font:style=bold:pixelsize=10;1
+font-1 = JetBrainsMono Nerd Font:size=18;5
+font-2 = Material Design Icons:style=Bold:size=14;3
+font-3 = unifont:fontformat=truetype:size=13:antialias=true;
+
+modules-left =      bspwm mpd round-left polywins round-right
+modules-center =
+modules-right =     round-left pulseaudio round-right memory round-left temp round-right cpu round-left wlan round-right date powermenu
+
+tray-position = right
+tray-padding = 1
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+
+[module/filesystem]
+type = internal/fs
+interval = 100
+
+mount-0 = /
+format = <label-mounted>
+format-mounted-padding = 1
+format-mounted-prefix = " "
+format-mounted-prefix-foreground = #dafeab 
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/workspaces]
+type = internal/xworkspaces
+pin-workspaces = false
+enable-click = true
+enable-scroll = true
+format-padding = 0
+icon-0 = 1;%{F#aafaff}󰋜
+icon-1 = 2;%{F#ffdaaa}󰊯
+icon-2 = 3;%{F#dafeab}󰝚
+icon-3 = 4;%{F#e0a0d0}󰊗
+icon-4 = 5;%{F#61afef}󰩹
+icon-default = 󰒓
+label-margin = 0
+label-separator =󰧞
+
+format = <label-state>
+
+label-focused = %{F#282c34}%icon%%{F-}
+label-focused-background = #4d4d4d
+label-focused-padding = 1
+
+label-occupied = %icon%
+label-occupied-padding = 1
+label-occupied-underline = #fff
+
+label-urgent = %icon%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 1
+
+label-empty = %icon% 
+label-empty-background = ${colors.background}
+label-empty-padding = 1
+
+
+
+[module/bspwm]
+type = internal/bspwm
+pin-workspaces = true
+enable-click = true
+enable-scroll = true
+format-padding = 0
+
+icon-default = 
+
+format = <label-state>
+format-background = ${color.rounds}
+;label-active = 
+;label-occupied = 
+;label-urgent = 
+;label-empty = 
+
+;label-active = 󰗮
+label-active = 󰮯
+label-occupied =󰧟
+label-urgent = 󰗶
+label-empty = 󰧟
+;󰑊
+;label-active = 󰋘
+;label-occupied = 󰫈
+;label-urgent = 󰗶
+;label-empty = 󰋙
+;label-empty = 
+
+label-empty-padding = 1
+label-active-padding = 1
+label-urgent-padding = 1
+label-occupied-padding = 1
+
+;label-empty-foreground = #58A4c5
+;label-empty-foreground = #99c47a
+label-empty-foreground = ${colors.yellow}
+;label-empty-background = ${colors.rounds}
+
+label-active-foreground = ${colors.yellow}
+;label-active-foreground = ${colors.blue}
+;label-active-background = ${colors.rounds}
+
+label-urgent-foreground = ${colors.red}
+;label-urgent-background = ${colors.rounds}
+
+label-occupied-foreground = ${colors.yellow}
+;label-occupied-background = ${colors.rounds}
+
+
+[module/mpd]
+type = internal/mpd
+format-padding = 1
+format-online = "<icon-prev> <toggle> <icon-next>"
+format-online-background = ${colors.background}
+format-online-padding = 1
+;format-online-foreground = ${colors.green}
+icon-prev =󰒮
+icon-prev-foreground = ${colors.green}
+icon-next =󰒭
+icon-next-foreground = ${colors.green}
+icon-stop =󰓛
+icon-stop-foreground = ${colors.red}
+icon-play =󰐊
+icon-play-foreground = ${colors.blue} 
+icon-pause = 󰏤
+icon-pause-foreground = ${colors.red}
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "󰘚 "
+format-padding = 1
+format-prefix-foreground = ${colors.red}
+format-foreground = ${colors.red}
+;format-underline = #f90000
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 6
+format-prefix = "󰍛 "
+format-padding = 1
+format-prefix-foreground = ${colors.green}
+;format-underline = #4bffdc
+format-foreground = ${colors.green}
+label = %mb_used%
+
+[module/temp]
+type = custom/script
+interval = 6.0
+exec = sensors | grep -o '+[0-9.]\+' | sed '1~2!d; s/+//' | head -3 | tail -1
+format = <label>
+format-background = ${colors.rounds}
+format-foreground = ${colors.blue}
+label = " 󰔏 %output%°C "
+label-padding = 
+
+[module/wlan]
+;%default_interface% = $(ip route | grep '^default' | awk '{print $5}')
+
+type = internal/network
+interface = ${env:DEFAULT_NETWORK_INTERFACE:wlp7s0f4u1} 
+;interface = wlp1s0f0u8
+interval = 5.0
+
+format-connected-prefix = "󰖩"
+;format-connected-prefix = "󰤧"
+format-connected-prefix-foreground = ${colors.blue}
+;format-connected-foreground = #ABB2BF
+format-connected = <label-connected>
+format-connected-foreground = ${colors.blue}
+format-connected-background = ${colors.rounds}
+format-connected-padding = 1
+;format-connected-underline = #9f78e1
+label-connected =󰧟%downspeed%
+
+format-disconnected = 󰖪  no connection
+format-disconnected-background = ${colors.rounds}
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+label-disconnected-foreground = ${colors.blue}
+
+;ramp-signal-0 = 
+;ramp-signal-1 = 
+;ramp-signal-2 = 
+;ramp-signal-3 = 
+;ramp-signal-4 = 
+;ramp-signal-foreground = ${colors.foreground-alt}
+
+[module/eth]
+type = internal/network
+interface = %default_interface%
+interval = 3.0
+
+format-connected-prefix = "󰖩 "
+format-connected-prefix-foreground = ${colors.blue}
+;format-connected-foreground = #ABB2BF
+format-connected = <label-connected>
+format-connected-foreground = ${colors.blue}
+format-connected-background = ${colors.rounds}
+format-connected-padding = 1
+;format-connected-underline = #9f78e1
+label-connected = %local_ip%
+
+format-disconnected = 󰖪  no connection
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+label-disconnected-foreground = ${colors.blue}
+
+
+[module/date]
+type = internal/date
+interval = 60
+date =
+date-alt = %a %d %b
+
+time = %l:%M %p
+time-alt = %l:%M %p
+
+label = "%date% %time% "
+format = <label>
+format-foreground = ${colors.blue}
+;format-foreground = #edfefe
+;format-margin = 1
+format-prefix = 󰃰
+format-prefix-padding = 1
+;format-prefix-underline = ${colors.color6}
+format-prefix-foreground = ${colors.blue}
+;format-prefix-background = ${colors.color1}
+;label =  %time%
+;label-underline = ${colors.color6}
+;label-foreground = ${colors.color3}
+;label-background = ${colors.color1}
+label-padding = 0
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = "<label-volume> <bar-volume> "
+format-volume-background = ${colors.rounds}
+format-volume-padding = 
+label-volume =" 󰕾 %percentage%%"
+label-volume-foreground = ${colors.yellow}
+
+label-muted = 󰖁 muted
+label-muted-foreground = #666
+label-muted-background = ${colors.rounds}
+bar-volume-width = 6
+bar-volume-foreground-0 = ${colors.green}
+bar-volume-foreground-1 = ${colors.green}
+bar-volume-foreground-2 = ${colors.green}
+bar-volume-foreground-3 = ${colors.green}
+bar-volume-foreground-4 = ${colors.green}
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator =  
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/alsa]
+type = internal/alsa
+format-volume = <label-volume> <bar-volume>
+format-volume-background = ${colors.rounds}
+format-volume-padding = 1
+label-volume =  %percentage%%
+label-volume-foreground = #ffdaaa
+
+label-muted =  muted
+label-muted-foreground = #666
+label-muted-background = ${colors.rounds}
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = 
+bar-volume-indicator-font = 2
+bar-volume-fill = ─
+bar-volume-fill-font = 2
+bar-volume-empty = ─
+bar-volume-empty-font = 2
+bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = #ffb52a
+
+format-discharging = <animation-discharging> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
+
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-foreground = ${colors.foreground-alt}
+animation-discharging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-underline = #f50a4d
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+[module/powermenu]
+
+type = custom/text
+content = "󰐥"
+content-padding = 1
+content-background = ${colors.background}
+content-foreground = ${colors.red}
+click-left = rofi -show power-menu -modi power-menu:~/.config/rofi/rofi-power-menu/rofi-power-menu
+format-underline = #704214
+
+[module/updates]
+type = custom/script
+exec = sudo xbps-install -S > /dev/null 2>&1; ~/.local/bin/xbps-updates
+format = <label>
+interval = 4600 
+label =" 󰏖 %output% " 
+label-padding = 0
+;label-foreground = #BF616A
+label-foreground = ${colors.red}
+label-background = ${colors.rounds}
+
+[module/pac-updates]
+type = custom/script
+exec = checkupdates | wc -l
+format = <label>
+interval = 4600
+label =" 󰏖 %output% "
+label-padding = 0
+;label-foreground = #BF616A
+label-foreground = ${colors.red}
+label-background = ${colors.rounds}
+
+[module/weather]
+
+type = custom/script
+
+exec = curl wttr.in/?0?q?T 2>/dev/null | awk '/°(C|F)/ {printf $(NF-1) $NF}'
+interval = 5000
+label = %output%
+format = <label>
+format-padding = 1
+format-prefix = "󰖕"
+format-prefix-foreground = #aafaff
+format-foreground = #aafaff
+
+[module/cava]
+type = custom/script
+tail = true
+exec = $HOME/.config/polybar/cava.sh
+format = <label>
+format-background = ${colors.background}
+format-font = 5
+label = %output%
+label-foreground =#99c47a 
+
+[module/round-left]
+type = custom/text
+content = %{T3}%{T-}
+content-foreground = ${colors.rounds}
+
+[module/round-right]
+type = custom/text
+content = %{T3}%{T-}
+content-foreground = ${colors.rounds}
+
+[module/polywins]
+type = custom/script
+exec = ~/.config/polybar/scripts/polywins.sh 2>/dev/null
+format = <label>
+format-background = #1e2127
+format-padding = 1
+format-margin = 0
+label = %output%
+label-padding = 0
+tail = true
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+
+; vim:ft=dosini
